@@ -7,7 +7,7 @@ Configuration
 -------------
 
 The default maximum number of permitted sessions is 1 per account. Change default max sessions can be changed in
-'Configuration >> People >> Session Limit'. The path for this is /admin/config/people/session-limit.
+'Configuration >> User accounts >> Session Limit'. The path for this is /admin/config/people/session-limit.
 
 The precedence of defined session limits are:
 
