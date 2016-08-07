@@ -21,6 +21,18 @@ define('SESSION_LIMIT_DROP', 1);
 define('SESSION_LIMIT_DISALLOW_NEW', 2);
 
 /**
+ * Implements hook_config_info();
+ */
+function session_limit_config_info() {
+  $prefixes = array();
+  $prefixes['session_limit.settings'] = array(
+    'group' => t('Configuration'),
+    'label' => t('Session limit settings'),
+  );
+  return $prefixes;
+}
+
+/**
  * Implements hook_permission().
  */
 function session_limit_permission() {
