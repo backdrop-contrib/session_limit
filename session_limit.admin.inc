@@ -25,7 +25,8 @@ function session_limit_settings() {
   $limit_behaviours = array(
     SESSION_LIMIT_DO_NOTHING => t('Do nothing.'),
     SESSION_LIMIT_DROP => t('Automatically drop the oldest sessions without prompting.'),
-    SESSION_LIMIT_DISALLOW_NEW => t('Prompt to disconnect extra sessions.'),
+    SESSION_LIMIT_DISALLOW_NEW => t('Prevent new session.'),
+    3 => t('Prompt to disconnect extra sessions.'),
   );
 
   $form['session_limit_behaviour'] = array(

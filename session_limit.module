@@ -264,6 +264,13 @@ function session_limit_user_settings_submit($form, &$form_state) {
 function session_limit_page() {
   global $user;
 
+  if (config_get('session_limit.settings', 'session_limit_behaviour') == SESSION_LIMIT_DISALLOW_NEW) {
+    session_destroy();
+    $user = backdrop_anonymous_user();
+
+    return;
+  }
+
   $result = db_query('SELECT * FROM {sessions} WHERE uid = :uid', array(':uid' => $user->uid));
   foreach ($result as $obj) {
     $message = $user->sid == $obj->sid ? t('Your current session.') : '';
