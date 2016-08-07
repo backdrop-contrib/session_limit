@@ -49,7 +49,7 @@ function session_limit_tokens($type, $tokens, array $data = array(), array $opti
   if ($type == 'session_limit') {
     foreach ($tokens as $name => $original) {
       if ($name == 'default') {
-        $replacements[$original] = variable_get('session_limit_max', 1);
+        $replacements[$original] = config_get('session_limit.settings', 'session_limit_max', 1);
       }
     }
   }

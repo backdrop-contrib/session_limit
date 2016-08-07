@@ -1,9 +1,5 @@
-name = Session Limit
-description = "Limit simultaneous user sessions."
-core = 7.x
+name = Session limit
+description = Limit simultaneous user sessions.
+backdrop = 1.x
 configure = admin/config/people/session-limit
-
-files[] = session_limit.install
-files[] = session_limit.module
-files[] = session_limit.tokens.inc
-files[] = tests/session_limit.test
+type = module
