@@ -38,10 +38,6 @@ Other recommended modules
 * [Autologout](https://github.com/backdrop-contrib/autologout) - For limiting the length of time a user's session can last.
 * [Passphrase Policy](https://github.com/backdrop-contrib/passphrase_policy) - For enforcing password length and complexity.
 
-This module is able to use the token module for generating tokenized emails or showing tokenized messages on the collision and disconnect events.
-
-https://github.com/backdrop-contrib/token
-
 Current Maintainer
 ------------------
 
